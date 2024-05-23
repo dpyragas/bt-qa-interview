@@ -13,7 +13,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/bt-qa-interview.git
+    git clone https://github.com/dpyragas/bt-qa-interview.git
     cd bt-qa-interview
     ```
 
