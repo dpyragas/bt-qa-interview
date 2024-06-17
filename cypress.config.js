@@ -12,11 +12,6 @@ module.exports = defineConfig({
 	fileServerFolder: ".",
 	fixturesFolder: "./cypress/fixtures",
 	modifyObstructiveCode: false,
-	video: true,
-	videosFolder:
-		"../../../dist/cypress/packages/app/broadband-acquisition-e2e/videos",
-	screenshotsFolder:
-		"../../../dist/cypress/packages/app/broadband-acquisition-e2e/screenshots",
 	chromeWebSecurity: false,
 	e2e: {
 		setupNodeEvents(on) {
@@ -24,7 +19,6 @@ module.exports = defineConfig({
 				...browserify.defaultOptions,
 				typescript: require.resolve("typescript"),
 			};
-
 			on("file:preprocessor", cucumber(options));
 		},
 		specPattern: [

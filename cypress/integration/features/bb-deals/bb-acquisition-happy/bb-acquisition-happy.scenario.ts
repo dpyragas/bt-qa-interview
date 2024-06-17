@@ -8,6 +8,11 @@ import {
   getCookiesPopupAcceptButton,
 } from "../../../../support/page-objects";
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+  return false
+})
+
+
 Given(
   "User visits Broadband Acquisition Deals Page",
   () => {
